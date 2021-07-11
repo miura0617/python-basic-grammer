@@ -1,0 +1,8 @@
+■setup.pyを作成する
+■MANIFESTファイルとdistフォルダ内にtar.gzファイルを作成するsdistコマンド
+$> python setup.py sdist
+■tar.gzファイルを展開するコマンド
+$> tar zxvf <tar.gzファイル>
+
+
+

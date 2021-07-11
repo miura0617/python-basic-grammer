@@ -1,0 +1,17 @@
+https://www.coppermine.jp/note/2019/01/install-mysql8-win/
+
+
+mysqlを初期化するときは、
+「mysqld --initialize」ではなく、
+「mysqld --initialize --console」とし、
+以下の実行例のように出力された「/5kIbxed(i)!」の部分が初期パスワードになることを忘れずに！
+
+
+【コマンドプロンプト実行例】
+c:\mysql\bin>mysqld --initialize --console
+2020-09-20T07:48:07.991011Z 0 [System] [MY-013169] [Server] c:\mysql\bin\mysqld.exe (mysqld 8.0.21) initializing of server in progress as process 9528
+2020-09-20T07:48:08.003510Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-09-20T07:48:08.499988Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-09-20T07:48:09.820265Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: /5kIbxed(i)!
+
+
