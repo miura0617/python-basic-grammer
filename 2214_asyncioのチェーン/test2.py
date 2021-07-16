@@ -14,5 +14,5 @@ async def print_sum(x, y):
     print("%s + %s = %s" % (x, y, result))
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(print_sum(1, 2))
+loop.run_until_complete(asyncio.wait([print_sum(1, 2), print_sum(3, 2)]))
 loop.close()
